@@ -13,7 +13,7 @@ export default function ContactForm() {
     destination: "",
     message: "",
   });
-
+const [ error, setError] = useState({});
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -21,18 +21,50 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const newErrors = {};
+    if(!formData.name.trim()){
+      newErrors.name = "Name is required";
+    }
+    if(!formData.phone.trim()){
+      newErrors.phone = "Phone number is required";
+    }
+    setError(newErrors);
+    if(Object.keys(newErrors).length > 0){
+      return;
+    }
+    try {
+      const response = await fetch("/api/enquiries",{
+        method: "POST",
+        headers:{
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(
+          {
+            ...formData,
+            type: "contact-form",
+          }),
+        
+      });
 
-    console.log(formData);
+      const data = await response.json();
+      console.log(data);
+      if(data.success){
+        alert("Your message has been sent successfully!");
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      destination: "",
-      message: "",
-    });
+        setFormData({
+          name:"",
+          email:"",
+          phone:"",
+          destination:"",
+          message:"",
+        });
+      }
+    } catch (error){
+      console.error("Error submitting form:", error);
+      alert("There was an error sending your message. Please try again later.");
+    }
   };
 
   return (
@@ -58,6 +90,7 @@ export default function ContactForm() {
           <form
             onSubmit={handleSubmit}
             className="mt-12 space-y-6"
+            noValidate
           >
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div>
@@ -72,13 +105,13 @@ export default function ContactForm() {
                   type="text"
                   id="name"
                   name="name"
-                  required
                   autoComplete="name"
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="John Doe"
                   className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
                 />
+                {error.name && <p className="mt-1 text-sm text-red-600">{error.name}</p>}
               </div>
 
               <div>
@@ -93,7 +126,6 @@ export default function ContactForm() {
                   type="email"
                   id="email"
                   name="email"
-                  required
                   autoComplete="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -122,6 +154,7 @@ export default function ContactForm() {
                   placeholder="+91 234 567 890"
                   className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
                 />
+                {error.phone && <p className="mt-1 text-sm text-red-600">{error.phone}</p>}
               </div>
 
               <div>
@@ -156,7 +189,6 @@ export default function ContactForm() {
                 id="message"
                 name="message"
                 rows={6}
-                required
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us about your dream trip..."

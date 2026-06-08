@@ -18,7 +18,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779776250/MansaDevi_ax8rik.png",
       rating: 4.8,
       tours: 18,
-      price: "₹1299",
+      price: "₹1499",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779776241/chandi-devi-temple-2338297_szprlx.jpg",
       rating: 4.8,
       tours: 20,
-      price: "₹1399",
+      price: "₹1499",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779778423/ShantikunjHaridwar_n2hnax.png",
       rating: 4.7,
       tours: 12,
-      price: "₹999",
+      price: "₹1199",
     },
     {
       id: 5,
@@ -81,7 +81,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779776257/Motichoor_ndqpux.png",
       rating: 4.8,
       tours: 14,
-      price: "₹1199",
+      price: "₹1499",
     },
     {
       id: 10,
@@ -90,7 +90,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779776266/Namami_gange_ghat_Haridwar_q0hpk1.png",
       rating: 4.8,
       tours: 14,
-      price: "₹1199",
+      price: "₹1499",
     },
     {
       id: 11,
@@ -99,7 +99,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779776252/vindhwasini_Haridwar_pkpxar.png",
       rating: 4.8,
       tours: 14,
-      price: "₹1199",
+      price: "₹1499",
     }
   ],
   Rishikesh: [
@@ -110,7 +110,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/v1779793174/Lakshman_Jhula_Rishikesh_ak0pzq.png",
       rating: 4.9,
       tours: 22,
-      price: "₹1499",
+      price: "₹1999",
     },
     {
       id: 102 ,
@@ -119,7 +119,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793180/Ram_Jhula_Rishikesh_zwebko.png",
       rating: 4.8,
       tours: 17,
-      price: "₹1299",
+      price: "₹1999",
     },
     {
       id: 103,
@@ -128,7 +128,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793189/TriveniGhat_Rishikesh_jhlu6i.png",
       rating: 4.9,
       tours: 20,
-      price: "₹1699",
+      price: "₹1999",
     },
     {
       id: 104,
@@ -137,7 +137,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793197/NeerGarh_waterfall_Rishikesh_nopskl.png",
       rating: 4.7,
       tours: 14,
-      price: "₹1099",
+      price: "₹2499",
     },
     {
       id: 105,
@@ -146,7 +146,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793201/Beatels_ashram_Rishikesh_cof6s8.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 106,
@@ -155,7 +155,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793173/Parmarth_niketan_ashram_o8r9ys.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 107,
@@ -164,7 +164,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793166/Shivpuri_Rihsikesh_l9hjsr.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 108,
@@ -173,7 +173,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793197/Kaudiyala_Rishikesh_xvdtyg.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 109,
@@ -182,7 +182,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793175/Kunjapuri_Temple_Rishikesh_togv6o.png",  
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 110,
@@ -191,7 +191,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779793188/Vashishta_Gufa_Rihsikesh_oc6rpn.png",  
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
   ],
 
@@ -203,7 +203,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795701/Robbers_Cave_Dun_ezryie.png",
       rating: 4.9,
       tours: 22,
-      price: "₹1499",
+      price: "₹2499",
     },
     {
       id: 202,
@@ -212,7 +212,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795678/Sahastradhara_Dun_soge4s.png",
       rating: 4.8,
       tours: 17,
-      price: "₹1299",
+      price: "₹2499",
     },
     {
       id: 203,
@@ -221,7 +221,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795776/FRI_Dun_keyx3j.png",
       rating: 4.9,
       tours: 20,
-      price: "₹1699",
+      price: "₹2499",
     },
     {
       id: 204,
@@ -230,7 +230,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795698/Tapkeshwar_Temple_Dun_ol6h1e.png",
       rating: 4.7,
       tours: 14,
-      price: "₹1099",
+      price: "₹2499",
     },
     {
       id: 205,
@@ -239,7 +239,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795692/MindrollingMonastery_Dun_g4pmgh.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 206,
@@ -248,7 +248,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795665/MalsiDeerPark_Dun_e5kt6i.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 207,
@@ -257,7 +257,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795678/LachhiwalaNaturePark_Dun_x482sz.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
     {
       id: 208,
@@ -266,7 +266,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779795707/Maldevta_Dun_s6mskh.png",
       rating: 4.8,
       tours: 13,
-      price: "₹999",
+      price: "₹2499",
     },
   ],
 
@@ -278,7 +278,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864541/JharipaniFall_Mussoorie_jimiwf.png",
       rating: 4.9,
       tours: 25,
-      price: "₹1999",
+      price: "₹3899",
     },
     {
       id: 302,
@@ -287,7 +287,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864534/Gunhill_Mussoorie_dnjknd.png",
       rating: 4.8,
       tours: 17,
-      price: "₹1499",
+      price: "₹3899",
     },
     {
       id: 303,
@@ -296,7 +296,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864536/MallRoad_Mussoorie_urmras.png",
       rating: 4.8,
       tours: 20,
-      price: "₹1799",
+      price: "₹3899",
     },
     {
       id: 304,
@@ -305,7 +305,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864532/CompanyGarden_Mussoorie_cr3has.png",
       rating: 4.7,
       tours: 11,
-      price: "₹999",
+      price: "₹3899",
     },
     {
       id: 305,
@@ -314,7 +314,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864529/LaalTiba_Mussoorie_crmuir.png",
       rating: 4.9,
       tours: 16,
-      price: "₹1599",
+      price: "₹3899",
     },
     {
       id: 306,
@@ -323,7 +323,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864534/CamelBackRoad_Mussoorie_qx2d8k.png",
       rating: 4.9,
       tours: 16,
-      price: "₹1599",
+      price: "₹3899",
     },
     {
       id: 307,
@@ -332,7 +332,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864531/Bhatta_fall_Mussoorie_uv4hnb.png",
       rating: 4.9,
       tours: 16,
-      price: "₹1599",
+      price: "₹3899",
     },
     {
       id: 308,
@@ -341,7 +341,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864530/GeorgeEverestHouse_Mussoorie_qxtmej.png",
       rating: 4.9,
       tours: 16,
-      price: "₹1599",
+      price: "₹3899",
     },
     {
       id: 309,
@@ -350,7 +350,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864529/CloudsEnd_Mussoorie_eeiw5a.png",
       rating: 4.9,
       tours: 16,
-      price: "₹1599",
+      price: "₹3899",
     },
     {
       id: 310,
@@ -359,7 +359,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864541/JharipaniFall_Mussoorie_jimiwf.png",
       rating: 4.9,
       tours: 16,
-      price: "₹1599",
+      price: "₹3899",
     },
   ],
   tehri: [
@@ -370,7 +370,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779869814/TehriLake_Tehri_shbjwb.png",
       rating: 4.9,
       tours: 28,
-      price: "₹1999",
+      price: "₹3499",
     },
     {
       id: 402,
@@ -379,7 +379,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864997/TehriDam_Tehri_ffebo1.png",
       rating: 4.8,
       tours: 20,
-      price: "₹1499",
+      price: "₹3499",
     },
     {
       id: 403,
@@ -388,7 +388,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864991/KotiColony_Tehri_hk23tm.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 404,
@@ -397,7 +397,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864993/TehriGarhwal_lio0fb.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 405,
@@ -406,7 +406,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779869827/Kanatal_Tehri_pevan4.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 406,
@@ -415,7 +415,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865012/SurkandaDevi_Tehri_i3sjav.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 407,
@@ -424,7 +424,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864997/Chamba_Tehri_mmwqbi.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 408,
@@ -433,7 +433,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864991/EcoPark_Tehri_g052nf.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 409,
@@ -442,7 +442,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864991/KodiaJungle_Tehri_stiegu.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
     {
       id: 410,
@@ -451,16 +451,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864987/SemMukhem_Tehri_sjm8xu.png",
       rating: 4.7,
       tours: 16,
-      price: "₹1299",
-    },
-    {
-      id: 411,
-      name: "Devprayag",
-      country: "Tehri, Uttarakhand",
-      image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864987/Devprayag_Tehri_eblq8c.png",
-      rating: 4.7,
-      tours: 16,
-      price: "₹1299",
+      price: "₹3499",
     },
   ],
   nainital: [
@@ -471,7 +462,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865292/NainiLake_Nainital_ofth9l.png",
       rating: 5.0,
       tours: 32,
-      price: "₹2499",
+      price: "₹5999",
     },
     {
       id: 502,
@@ -480,7 +471,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865298/SnowPoint_Nainital_bzwey9.png",
       rating: 4.9,
       tours: 18,
-      price: "₹1699",
+      price: "₹5999",
     },
     {
       id: 503,
@@ -489,7 +480,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865291/NainaDeviTemple_Nainital_acc1hc.png",
       rating: 4.8,
       tours: 20,
-      price: "₹1499",
+      price: "₹5999",
     },
     {
       id: 504,
@@ -498,7 +489,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865302/EcoCavePark_Nainital_zqhmgh.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
     {
       id: 505,
@@ -507,7 +498,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865299/TiffinTop_Nainital_pfh0jg.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
     {
       id: 506,
@@ -516,7 +507,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865305/TheMallRoad_Nainital_itwj7w.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
     {
       id: 507,
@@ -525,7 +516,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865300/NainitalZoo_Nainital_ii7fn9.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
     {
       id: 508,
@@ -534,7 +525,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865304/hanumanTemple_Nainital_eo5djo.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
     {
       id: 509,
@@ -543,7 +534,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865302/BhimtalLake_Nainital_mpbyxy.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
     {
       id: 510,
@@ -552,7 +543,7 @@ export const destinations = {
       image:"https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779865294/SattaLake_Nainital_qr9wcu.png",
       rating: 4.7,
       tours: 12,
-      price: "₹1199",
+      price: "₹5999",
     },
   ],
 };

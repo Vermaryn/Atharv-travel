@@ -78,7 +78,7 @@ const legalLinks = [
 const socialLinks = [
   {
     icon: FaFacebook,
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/1E9om1wJxt/?mibextid=wwXIfr",
     label: "Facebook",
     hover: "hover:bg-blue-600",
   },
@@ -90,7 +90,7 @@ const socialLinks = [
   },
   {
     icon: FaInstagram,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/atharvtravels25?igsh=MTZkdHR0Zm9kMmloZQ%3D%3D&utm_source=qr",
     label: "Instagram",
     hover: "hover:bg-pink-600",
   },

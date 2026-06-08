@@ -1,6 +1,70 @@
 "use client";
+import { useState } from "react"; 
 import Navbar from "@/app/components/Navbar";
 export default function BookNowPage() {
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      phone: "",
+      destination: "",
+      travelers: "",
+      message: "",
+    })
+    const [error, setErrors] = useState({});
+    const handleChange =(e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      })
+    }
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      const newErrors = {}; 
+      if(!formData.name.trim()){
+        newErrors.name = "Name is required";
+      }
+      if(!formData.phone.trim()){
+        newErrors.phone = "Phone number is required";
+      }
+
+      setErrors(newErrors);
+
+      if(Object.keys(newErrors).length > 0){
+        return;
+      }
+
+      try{
+        const response = await fetch("/api/enquiries",{
+          method:"POST",
+          headers:{
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(
+            {
+              ...formData,
+              type: "booking",
+            }
+            ),
+        });
+        const data = await response.json();
+        if(data.success){
+          alert("Your message has been sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            destination: "",
+            travelers:"",
+            message: "",
+          })
+        } 
+
+      }catch(error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error sending your message. Please try again later.");
+    } 
+    }
   return (
     <main className="min-h-screen bg-slate-50 px-6 py-20">
       <Navbar />
@@ -66,7 +130,11 @@ export default function BookNowPage() {
               Fill out the form and our team will contact you soon.
             </p>
 
-            <form className="mt-8 space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              className="mt-8 space-y-6"
+              noValidate
+              >
               {/* Name */}
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">
@@ -75,9 +143,13 @@ export default function BookNowPage() {
 
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Enter your name"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
+                {error.name && <p className="mt-1 text-sm text-red-600">{error.name}</p>}
               </div>
 
               {/* Phone */}
@@ -88,7 +160,26 @@ export default function BookNowPage() {
 
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Enter phone number"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                />
+                {error.phone && <p className="mt-1 text-sm text-red-600">{error.phone}</p>}
+              </div>
+              {/* Email */}
+              <div>
+                <label className="mb-2 block text-sm font-medium text-slate-700">
+                  Phone Number
+                </label>
+
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter email address (optional)"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
@@ -101,6 +192,9 @@ export default function BookNowPage() {
 
                 <input
                   type="text"
+                  name="destination"
+                  value={formData.destination}
+                  onChange={handleChange}
                   placeholder="Where do you want to travel?"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
@@ -114,6 +208,9 @@ export default function BookNowPage() {
 
                 <input
                   type="number"
+                  name="travelers"
+                  value={formData.travelers}
+                  onChange={handleChange}
                   placeholder="e.g. 2"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
@@ -127,6 +224,9 @@ export default function BookNowPage() {
 
                 <textarea
                   rows={4}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Tell us about your trip requirements..."
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />

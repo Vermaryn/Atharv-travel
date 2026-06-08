@@ -11,13 +11,15 @@ import Gallery from "./components/Gallery";
 import FAQ from "./components/FAQ";
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
-
+import FloatingButton from "./components/FloatingButton";
+import PopupModal from "./components/PopupModal";
+import SearchWrapper from "./components/SearchWrapper";
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
-      <SearchBar />
+      <SearchWrapper />
       <PopularDestinations />
       <FeaturedPackages />
       <Experiences />
@@ -28,6 +30,8 @@ export default function Home() {
       <FAQ />
       <NewsLetter />
       <Footer />
+      <FloatingButton />
+      <PopupModal />
     </div>
   )
 }

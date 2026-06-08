@@ -141,7 +141,7 @@ export default function Gallery() {
           className="mt-16 flex justify-center"
         >
           <Link
-            href="https://instagram.com"
+            href="https://www.instagram.com/atharvtravels25?igsh=MTZkdHR0Zm9kMmloZQ%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Follow Wanderly on Instagram"

@@ -41,7 +41,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight tracking-tight"
             >
-              Explore the Uttrakhand
+              Explore Uttrakhand
               <br />
               <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
                 Your Way
@@ -72,13 +72,6 @@ export default function Hero() {
                     Start Your Journey
                     <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"/>
                 </Link>
-                <button
-                    aria-label="Watch Travel Video"
-                    className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-md px-8 py-4 text-white transition-all duration-300 hover:bg-white/20"
-                >
-                    <Play className="w-5 h-5" />
-                    <span>Watch Video</span>
-                </button>
             </motion.div>
             {/* Stats */}
             <motion.section
@@ -89,14 +82,14 @@ export default function Hero() {
                 className="mt-20 mb-25 flex flex-col items-center justify-center gap-10 md:gap-1 4 text-white"
             >
                 <article>
-              <h2 className="text-3xl md:text-4xl font-bold">500+</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">100+</h2>
               <p className="mt-2 text-white/70">Destinations</p>
             </article>
 
             <div className="hidden md:block w-px h-12 bg-white/20" />
 
             <article>
-              <h2 className="text-3xl md:text-4xl font-bold">50k+</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">2K+</h2>
               <p className="mt-2 text-white/70">Happy Travelers</p>
             </article>
             <div className="hidden md:block w-px h-12 bg-white/20" />
