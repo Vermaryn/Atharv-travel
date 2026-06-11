@@ -50,6 +50,11 @@ const features = [
   },
 ];
 
+const travelers = [
+  "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781179386/7_mezzpd.png",
+  "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178698/2_w2fcp3.png",
+  "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178422/3_uew9ek.png",
+];
 export default function WhyChooseUs() {
   return (
     <section
@@ -154,21 +159,24 @@ export default function WhyChooseUs() {
               {/* Travelers */}
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-3">
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-linear-to-br from-blue-400 to-blue-600" />
-
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-linear-to-br from-purple-400 to-purple-600" />
-
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-linear-to-br from-pink-400 to-pink-600" />
+                  {travelers.map((img, index) => (
+                    <div
+                      key={index}
+                      className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white"
+                    >
+                      <Image
+                        src={img}
+                        alt={`Traveler ${index + 1}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ))}
                 </div>
 
                 <div>
-                  <p className="text-lg font-bold text-slate-900">
-                    50,000+
-                  </p>
-
-                  <p className="text-sm text-slate-600">
-                    Happy Travelers
-                  </p>
+                  <p className="text-lg font-bold text-slate-900">1000+</p>
+                  <p className="text-sm text-slate-600">Happy Travelers</p>
                 </div>
               </div>
 

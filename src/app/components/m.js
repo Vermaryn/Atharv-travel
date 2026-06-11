@@ -1,75 +1,118 @@
 "use client";
-import { Search, MapPin, Calendar, Users } from "lucide-react";
-import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 
-export default function SearchBar() {
+import { useState } from "react";
+
+export default function AIChatbot() {
+  const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState("");
+  const [messages, setMessages] = useState([
+    {
+      role: "assistant",
+      content: "Hello 👋 I'm Atharv Travel AI. How can I help you?",
+    },
+  ]);
+
+  const sendMessage = async () => {
+    if (!message.trim()) return;
+
+    const userMessage = message;
+
+    setMessages((prev) => [
+      ...prev,
+      {
+        role: "user",
+        content: userMessage,
+      },
+    ]);
+
+    setMessage("");
+
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userMessage,
+        }),
+      });
+
+      const data = await res.json();
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: data.reply,
+        },
+      ]);
+    } catch (error) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: "Something went wrong.",
+        },
+      ]);
+    }
+  };
+
   return (
-    <div className="relative -mt-20 z-20 px-6 mb-20">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="backdrop-blur-xl bg-white/80 rounded-3xl shadow-2xl border border-white/20 p-8"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="md:col-span-1">
-              <label className="flex items-center gap-2 text-slate-600 mb-2">
-                <MapPin className="w-4 h-4" />
-                Destination
-              </label>
-              <input
-                type="text"
-                placeholder="Where to?"
-                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl placeholder:text-slate-400 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-              />
-            </div>
+    <>
+      {/* Floating Button */}
+      <button
+        onClick={() => setOpen(!open)}
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-[#000945] px-5 py-3 text-white shadow-lg"
+      >
+        💬 Chat
+      </button>
 
-            <div className="md:col-span-1">
-              <label className="flex items-center gap-2 text-slate-600 mb-2">
-                <Calendar className="w-4 h-4" />
-                Check In
-              </label>
-              <input
-                type="date"
-                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl placeholder:text-slate-400 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-              />
-            </div>
-
-            <div className="md:col-span-1">
-              <label className="flex items-center gap-2 text-slate-600 mb-2">
-                <Calendar className="w-4 h-4" />
-                Check Out
-              </label>
-              <input
-                type="date"
-                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl placeholder:text-slate-400 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-              />
-            </div>
-
-            <div className="md:col-span-1">
-              <label className="flex items-center gap-2 text-slate-600 mb-2">
-                <Users className="w-4 h-4" />
-                Travelers
-              </label>
-              <select
-                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl placeholder:text-slate-400 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-              >
-                <option>1 Person</option>
-                <option>2 People</option>
-                <option>3 People</option>
-                <option>4+ People</option>
-              </select>
-            </div>
+      {/* Chat Window */}
+      {open && (
+        <div className="fixed bottom-20 right-5 z-50 flex h-[500px] w-[350px] flex-col overflow-hidden rounded-xl border bg-white shadow-2xl">
+          <div className="bg-[#000945] p-4 text-white font-semibold">
+            Atharv Travel AI
           </div>
 
-          <button className="mt-6 w-full md:w-auto px-8 py-4 bg-linear-to-r from-blue-600 to-indigo-600 text-white rounded-xl hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all flex items-center justify-center gap-2 mx-auto">
-            <Search className="w-5 h-5" />
-            Search Destinations
-          </button>
-        </motion.div>
-      </div>
-    </div>
+          <div className="flex-1 overflow-y-auto p-4 space-y-3">
+            {messages.map((msg, index) => (
+              <div
+                key={index}
+                className={`max-w-[80%] rounded-lg p-3 text-sm ${
+                  msg.role === "user"
+                    ? "ml-auto bg-blue-100"
+                    : "bg-slate-100"
+                }`}
+              >
+                {msg.content}
+              </div>
+            ))}
+          </div>
+
+          <div className="flex gap-2 border-t p-3">
+            <input
+              type="text"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Ask about tours..."
+              className="flex-1 rounded-md border px-3 py-2 outline-none"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  sendMessage();
+                }
+              }}
+            />
+
+            <button
+              onClick={sendMessage}
+              className="rounded-md bg-[#000945] px-4 py-2 text-white"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

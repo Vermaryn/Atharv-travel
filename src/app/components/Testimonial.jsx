@@ -7,63 +7,62 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    location: "New York, USA",
+    name: "Priya Sharma",
+    location: "Delhi, India",
     rating: 5,
-    text: "Wanderly made our Maldives honeymoon absolutely perfect! Every detail was taken care of, from the stunning water villa to the romantic dinners.",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    trip: "Maldives Honeymoon Package",
+    text: "Our Char Dham Yatra was perfectly organized by Atharv Travel. The hotels, transportation, and driver support were excellent throughout the journey.",
+    image: "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178698/2_w2fcp3.png",
+    trip: "Char Dham Yatra",
   },
+
   {
     id: 2,
-    name: "Michael Chen",
-    location: "Singapore",
+    name: "Rahul Verma",
+    location: "Noida, India",
     rating: 5,
-    text: "The Swiss Alps adventure was breathtaking! The hiking trails, mountain views, and cozy chalets exceeded all expectations.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    trip: "Swiss Alps Adventure",
+    text: "The Haridwar and Rishikesh tour was a wonderful experience. Everything was well planned, and the Ganga Aarti was truly unforgettable.",
+    image: "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178458/1_r2o4lf.png",
+    trip: "Haridwar & Rishikesh Tour",
   },
+
   {
     id: 3,
-    name: "Emma Williams",
-    location: "London, UK",
+    name: "Sneha Kapoor",
+    location: "Chandigarh, India",
     rating: 5,
-    text: "Our family trip to Bali was incredible! Wanderly perfectly balanced relaxation, activities, and cultural experiences.",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    trip: "Bali Family Vacation",
+    text: "We booked a Mussoorie family trip through Atharv Travel. The hotel, sightseeing, and taxi service exceeded our expectations.",
+    image: "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178452/5_fzpesk.png",
+    trip: "Mussoorie Family Tour",
   },
+
   {
     id: 4,
-    name: "David Martinez",
-    location: "Madrid, Spain",
+    name: "Amit Gupta",
+    location: "Jaipur, India",
     rating: 5,
-    text: "The Dubai city tour was spectacular! Luxury hotels, desert safari, and flawless planning made this unforgettable.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    trip: "Dubai Luxury Experience",
+    text: "Our Dehradun and Robber's Cave sightseeing package was smooth and hassle-free. The driver was professional and very helpful.",
+    image: "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178422/3_uew9ek.png",
+    trip: "Dehradun Sightseeing Tour",
   },
+
   {
     id: 5,
-    name: "Lisa Anderson",
-    location: "Sydney, Australia",
+    name: "Neha Joshi",
+    location: "Lucknow, India",
     rating: 5,
-    text: "Wanderly turned my Iceland solo travel dreams into reality. I felt safe, supported, and inspired throughout the trip.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
-    trip: "Iceland Solo Adventure",
+    text: "The Kedarnath Yatra was managed exceptionally well. Atharv Travel provided timely guidance and comfortable arrangements.",
+    image: "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781178435/6_khoj4u.png",
+    trip: "Kedarnath Yatra",
   },
+
   {
     id: 6,
-    name: "James Wilson",
-    location: "Toronto, Canada",
+    name: "Vikas Mehta",
+    location: "Gurugram, India",
     rating: 5,
-    text: "The Patagonia photography tour was a dream come true. Stunning locations, expert guidance, and unforgettable memories.",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    trip: "Patagonia Photography Tour",
+    text: "We booked a Nainital weekend getaway and had a fantastic experience. The package was affordable and the service was outstanding.",
+    image: "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1781179386/7_mezzpd.png",
+    trip: "Nainital Weekend Tour",
   },
 ];
 

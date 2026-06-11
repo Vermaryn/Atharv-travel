@@ -1,14 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Plane, MapPin, Phone, Mail } from "lucide-react";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
-
+import {MapPin, Phone, Mail } from "lucide-react";
+import Image from "next/image";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const quickLinks = [
   {
@@ -63,7 +58,7 @@ const legalLinks = [
   },
   {
     label: "Privacy",
-    href: "/privacy-policy",
+    href: "/privacy",
   },
   {
     label: "Cookies",
@@ -71,7 +66,7 @@ const legalLinks = [
   },
   {
     label: "Sitemap",
-    href: "/sitemap.xml",
+    href: "/sitemap",
   },
 ];
 
@@ -109,10 +104,7 @@ export default function Footer() {
       aria-labelledby="footer-heading"
     >
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <h2
-          id="footer-heading"
-          className="sr-only"
-        >
+        <h2 id="footer-heading" className="sr-only">
           Website Footer
         </h2>
 
@@ -121,12 +113,14 @@ export default function Footer() {
           {/* Brand */}
           <section className="lg:col-span-2">
             {/* Logo */}
-            <Link
-              href="/"
-              className="inline-flex items-center gap-3"
-            >
+            <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-blue-600 to-indigo-600 shadow-lg">
-                <Plane className="h-6 w-6 text-white" />
+                <Image
+                  src="https://res.cloudinary.com/dpximmfna/image/upload/v1781182129/logo_uvb7j9.png"
+                  alt="Atharv Travel Logo"
+                  width={35}
+                  height={35}
+                />
               </div>
 
               <span className="text-2xl font-bold tracking-tight">
@@ -166,10 +160,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <nav aria-labelledby="quick-links-heading">
-            <h3
-              id="quick-links-heading"
-              className="text-lg font-semibold"
-            >
+            <h3 id="quick-links-heading" className="text-lg font-semibold">
               Quick Links
             </h3>
 
@@ -189,10 +180,7 @@ export default function Footer() {
 
           {/* Support */}
           <nav aria-labelledby="support-links-heading">
-            <h3
-              id="support-links-heading"
-              className="text-lg font-semibold"
-            >
+            <h3 id="support-links-heading" className="text-lg font-semibold">
               Support
             </h3>
 
@@ -212,9 +200,7 @@ export default function Footer() {
 
           {/* Contact */}
           <address className="not-italic">
-            <h3 className="text-lg font-semibold">
-              Contact
-            </h3>
+            <h3 className="text-lg font-semibold">Contact</h3>
 
             <ul className="mt-6 space-y-5">
               <li className="flex items-start gap-3 text-slate-400">
@@ -245,7 +231,7 @@ export default function Footer() {
                 >
                   <Mail className="h-5 w-5 shrink-0 text-blue-400" />
 
-                  <span>atharvtravels@gmail.com</span>
+                  <span>atharvtravels25@gmail.com</span>
                 </a>
               </li>
             </ul>
@@ -256,13 +242,13 @@ export default function Footer() {
         <div className="mt-16 border-t border-slate-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             {/* Copyright */}
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-slate-500 md:ml-20">
               © 2026 Atharv Travels. All rights reserved.
             </p>
 
             {/* Legal Links */}
             <nav aria-label="Legal Links">
-              <ul className="flex flex-wrap items-center justify-center gap-6 text-sm">
+              <ul className="flex flex-wrap items-center justify-center gap-6 text-sm md:mr-20">
                 {legalLinks.map((link) => (
                   <li key={link.label}>
                     <Link

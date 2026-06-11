@@ -20,8 +20,8 @@ const contactCards = [
   {
     icon: Mail,
     title: "Email",
-    value: "hello@atharvtravels.com",
-    href: "mailto:hello@atharvtravels.com",
+    value: "atharvtravels25@gmail.com",
+    href: "mailto:atharvtravels25@gmail.com",
   },
   {
     icon: MapPin,

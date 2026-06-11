@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import FloatingButton from "./components/FloatingButton";
 import PopupModal from "./components/PopupModal";
 import SearchWrapper from "./components/SearchWrapper";
+import AIChatbot from "./components/AIchatbox";
 export default function Home() {
   return (
     <div>
@@ -30,6 +31,7 @@ export default function Home() {
       <FAQ />
       <NewsLetter />
       <Footer />
+      <AIChatbot />
       <FloatingButton />
       <PopupModal />
     </div>

@@ -4,16 +4,32 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Send, Check } from "lucide-react";
 
+
 export default function Newsletter() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    console.log("Newsletter Subscription:", email);
+  try {
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    const data = await res.json();
+
+    alert(data.message);
 
     setEmail("");
-  };
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong");
+  }
+};
 
   return (
     <section

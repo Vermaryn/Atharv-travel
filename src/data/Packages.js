@@ -217,7 +217,7 @@ export const packages = [
   {
     id: 6,
     title: "Haridwar to Musoorie",
-    destination: "Rishikesh",
+    destination: "Musoorie",
     duration: "1 Day",
     image:
       "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864529/CloudsEnd_Mussoorie_eeiw5a.png",
