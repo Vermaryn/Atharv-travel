@@ -1,7 +1,7 @@
 
 import StatusSelect from "./StatusSelect";
 export default async function Bookings() {
-  const res = await fetch("http://localhost:3000/api/enquiries", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/enquiries`, {
     cache: "no-store",
   });
 

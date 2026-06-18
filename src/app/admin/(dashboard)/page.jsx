@@ -1,5 +1,5 @@
 export default async function AdminDashboard() {
-  const res = await fetch("http://localhost:3000/api/enquiries",{
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/enquiries`,{
     cache:"no-store"
   });
   const data = await res.json();
