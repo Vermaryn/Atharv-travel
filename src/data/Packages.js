@@ -10,14 +10,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:5500,
+        seats:"5 seater",
+        price:5499,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:7000,
+        price:6999,
       }
     ],
     features:[
@@ -53,14 +53,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:2800,
+        seats:"5 seater",
+        price:2999,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:3500,
+        price:3499,
       }
     ],
     features:[
@@ -96,14 +96,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:16000,
+        seats:"5 seater",
+        price:15999,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:20000,
+        price:19999,
       }
     ],
     features:[
@@ -139,14 +139,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:3000,
+        seats:"5 seater",
+        price:3199,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:5000,
+        price:3999,
       }
     ],
     features:[
@@ -182,14 +182,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:3500,
+        seats:"5 seater",
+        price:3499,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:5000,
+        price:4999,
       }
     ],
     features:[
@@ -216,8 +216,8 @@ export const packages = [
   },
   {
     id: 6,
-    title: "Haridwar to Musoorie",
-    destination: "Musoorie",
+    title: "Haridwar to Mussoorie",
+    destination: "Mussoorie",
     duration: "1 Day",
     image:
       "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779864529/CloudsEnd_Mussoorie_eeiw5a.png",
@@ -225,14 +225,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:4000,
+        seats:"5 seater",
+        price:3999,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:5500,
+        price:5499,
       }
     ],
     features:[
@@ -268,14 +268,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:6000,
+        seats:"5 seater",
+        price:5999,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:7500,
+        price:7499,
       }
     ],
     features:[
@@ -302,23 +302,23 @@ export const packages = [
   },
   {
     id: 8,
-    title: "haridwar to Chaardham",
+    title: "Haridwar to Char Dham",
     destination: "chaardham",
-    duration: "10 Day",
+    duration: "10 Days",
     image:
       "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779356544/Chardham_cqmupz.png",
     taxis:[
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:"25000/person",
+        seats:"5 seater",
+        price:"21999/person",
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:"25000/person",
+        price:"24999/person",
       }
     ],
     features:[
@@ -347,21 +347,21 @@ export const packages = [
     id: 9,
     title: "Haridwar to DoDham",
     destination: "DoDham",
-    duration: "6 Day",
+    duration: "6 Days",
     image:
       "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779913632/DoDham_o5wxzj.png",
     taxis:[
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:"15000/person",
+        seats:"5 seater",
+        price:"14999/person",
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:"15000/person",
+        price:"14999/person",
       }
     ],
     features:[
@@ -389,8 +389,8 @@ export const packages = [
   
   {
     id: 10,
-    title: "Haridwar to kainchi dham",
-    destination: "kainchi dham",
+    title: "Haridwar to Kainchi Dham",
+    destination: "Kainchi Dham",
     duration: "1 Day",
     image:
       "https://res.cloudinary.com/dpximmfna/image/upload/q_auto/f_auto/v1779913264/KainchiDham_swllrl.png",
@@ -398,14 +398,14 @@ export const packages = [
       {
         type:"Sedan",
         vehicle:"swift dzire",
-        seats:"4 Seater",
-        price:6000,
+        seats:"5 seater",
+        price:6499,
       },
       {
         type:"SUV",
-        vehicle:"innova crysta",
+        vehicle:"Ertiga",
         seats:"6 Seater",
-        price:8000,
+        price:7499,
       }
     ],
     features:[

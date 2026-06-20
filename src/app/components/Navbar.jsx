@@ -55,7 +55,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="text-2xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent ">
-                Atharv travel
+                Atharv travels
               </span>
             </Link>
             {/* Desktop Navigation */}
