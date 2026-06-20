@@ -78,7 +78,7 @@ export default function AIChatbot() {
         onClick={() => setOpen(!open)}
         className="fixed bottom-20 right-5 z-50 rounded-full bg-[#000945] px-5 py-3 text-white shadow-lg cursor-pointer"
       >
-        💬 Chat
+        💬 Atharv AI
       </button>
 
       {/* Chat Window */}
